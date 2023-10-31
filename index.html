@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.js" integrity="sha512-MiIhpeQSr5AO2P1c/3vME/XhtuoDMIH/qtCHusokwCgsjVLzSKaNiNYEeDM1PhFpi6HLuocZmaZ21R0MS+rEyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            important: true,
+            theme: {
+                extend: {
+                    colors: {
+                        'main': "#08091a"
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @font-face {
+            font-family: nigerian;
+            src: url(Ubuntu-Regular.ttf);
+        }
+        @font-face {
+            font-family: ass;
+            src: url(Ubuntu-Bold.ttf);
+        }
+        .font-ubuntu {
+            font-family: nigerian;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .col {
+            border-radius: 8px;
+            padding: 12px
+        }
+    </style>
+</head>
+
+<body class="bg-main font-ubuntu">
+    <main class="max-w-screen-xl mx-auto p-5">
+        <nav class="border-b-2 border-zinc-400">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+              <a href="https://cofs.fun/" class="flex text-white text-2xl items-center">
+                  <span class="self-center text-2xl font-semibold whitespace-nowrap text-white" id="type">Plexus</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+              </a>
+              <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden text-white" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+              </button>
+              <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 lg:mt-5 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-transparent border md:bg-transparent ">
+        
+                  <li>
+                    <a href="/" class="block py-2 lg:pl-0 lg:pr-0 pl-3 pr-4 text-white  rounded" aria-current="page">Home</a>
+                  </li>              <li>
+                    <a href="#prices" class="block py-2 lg:pl-0 lg:pr-0 mb-5 pl-3 pr-4 text-white  rounded" aria-current="page">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 lg:pl-0 lg:pr-0 mb-5 pl-3 pr-4 text-white rounded bg-indigo-600 rounded" aria-current="page">Signup</a>
+                  </li>
+        
+    
+    
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <section class="py-32 border-b-2 border-zinc-400">
+            <div class="w-64 h-64 blur-3xl bg-indigo-600/25 absolute -top-10 -left-10"></div>
+            <div class="w-64 h-64 blur-3xl bg-indigo-600/25 absolute -top-10 -left-10"></div>
+            <div class="w-64 h-64 blur-3xl bg-indigo-600/25 absolute bottom-10 right-10"></div>
+            <div class="w-64 h-64 blur-3xl bg-indigo-600/25 absolute bottom-10 right-10"></div>
+            <div class="grid">
+                <div class="col">
+                    <h2 class="text-white tracking-widest mb-3">PLEXUS</h2>
+                    <h1 class="text-white text-3xl md:text-4xl font-extrabold">Developing websites with ease.</h1>
+                    <p class="mt-5 text-zinc-400">Develop websites with ease with Plexus.<br> All components and coding scripts in one space.</p>
+                    <div class="mt-5">
+                        <button id="Signup" class="bg-indigo-600 border border-indigo-600 text-white py-2 px-4 duration-500 hover:scale-105 rounded-2xl mt-5">Signup</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="https://i.pinimg.com/originals/2a/53/65/2a53651a35816f499270d8275fd5318f.gif" width="600" height="500" class="rounded-xl">
+                </div>
+            </div>
+        </section>
+        <section class="py-32 border-b-2 border-zinc-400">
+            <div class="grid">
+                <div class="col mt-5 mb-5 mr-5">
+                    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWJlaThud2drbnY4dWFwZ3JmZWJqenhld29qcm55dG14MWxwMzVseCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif" class="w-full h-full flex flex-wrap rounded-2xl">
+                </div>
+                <div class="col mt-5 mb-5 ms-5">
+                    <h1 class="text-white font-extrabold text-2xl md:text-3xl"><i class="text-2xl md:text-4xl fa-solid fa-bolt mr-3"></i>Flexability</h1>
+                    <p class="mt-5 text-zinc-400">Our service is really easy to use. All you need to do is sign up and create a project. The spaces includes components, back-end, and more.</p>
+                </div>
+            </div>
+            <div class="grid mt-10">
+                <div class="col mt-5 mb-5 ms-5">
+                    <h1 class="text-white font-extrabold text-2xl md:text-3xl"><i class="text-2xl md:text-4xl fa-solid fa-user mr-3"></i>Compatibility</h1>
+                    <p class="mt-5 text-zinc-400">Plexus is for anyone and everyone! You can work on your projects on mobile, computer, etc.</p>
+                </div>
+                <div class="col mt-5 mb-5 mr-5">
+                    <img src="https://media.tenor.com/CeDk6XdCgOUAAAAi/develop-web.gif" class="w-full h-full flex flex-wrap rounded-2xl">
+                </div>
+            </div>
+        </section>
+        <section class="py-32 border-b-2 border-zinc-400" id="prices">
+            <div class="text-center justify-center items-center align-center">
+                <h1 class="text-white font-extrabold text-2xl md:text-3xl">Pricing</h1>
+                <div class="grid mt-10">
+                    <div class="col border border-zinc-400">
+                        <div class="border-b-2 border-zinc-400">
+                            <h1 class="text-white font-extrabold text-start">Free Plan<br>$0/lifetime</h1>
+                            <p class="text-zinc-300 mt-5 mb-5 text-start">The free version.</p>
+                        </div>
+                        <div class="mt-5">
+                            <ul>
+                                <li class="text-start text-zinc-300"><i class="fa-solid fa-check mr-3"></i> 3 Spaces</li>
+                                <li class="text-start text-zinc-300"><i class="fa-solid fa-check mr-3"></i> 5 Projects</li>
+                                <li class="text-start text-zinc-300"><i class="fa-solid fa-check mr-3"></i> Less features</li>
+                            </ul>
+                            <footer class="mt-5">
+                                <button id="Signup" class="bg-indigo-600 border border-indigo-600 text-white w-full flex flex-wrap text-center align-center align-items-center justify justify-center py-2 px-4 duration-500 hover:bg-white hover:border-white hover:text-indigo-600 rounded-2xl mt-5">Signup</button>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col border border-zinc-400">
+                        <div class="border-b-2 border-zinc-400">
+                            <h1 class="text-white font-extrabold text-start">Pro Version<br>$4.99/monthly</h1>
+                            <p class="text-zinc-300 mt-5 mb-5 text-start">The pro version.</p>
+                        </div>
+                        <div class="mt-5">
+                            <ul>
+                                <li class="text-start text-zinc-300"><i class="fa-solid fa-check mr-3"></i> 5 Spaces</li>
+                                <li class="text-start text-zinc-300"><i class="fa-solid fa-check mr-3"></i> 10 Projects</li>
+                                <li class="text-start text-zinc-300"><i class="fa-solid fa-check mr-3"></i> More features</li>
+                            </ul>
+                            <footer class="mt-5">
+                                <button id="Signup" class="bg-indigo-600 border border-indigo-600 text-white w-full flex flex-wrap text-center align-center align-items-center justify justify-center py-2 px-4 duration-500 hover:bg-white hover:border-white hover:text-indigo-600 rounded-2xl mt-5">Purchase</button>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="col border border-zinc-400">
+                        <div class="border-b-2 border-zinc-400">
+                            <h1 class="text-white font-extrabold text-start">Pro+ plan<br>$15/monthly</h1>
+                            <p class="text-zinc-300 mt-5 mb-5 text-start">The best version.</p>
+                        </div>
+                        <div class="mt-5">
+                            <ul>
+                                <li class="text-start text-zinc-300"><i class="fa-solid fa-check mr-3"></i> 50 Spaces</li>
+                                <li class="text-start text-zinc-300"><i class="fa-solid fa-check mr-3"></i> Unlimited Projects</li>
+                                <li class="text-start text-zinc-300"><i class="fa-solid fa-check mr-3"></i> Advanced features</li>
+                            </ul>
+                            <footer class="mt-5">
+                                <button id="Signup" class="bg-indigo-600 border border-indigo-600 text-white w-full flex flex-wrap text-center align-center align-items-center justify justify-center py-2 px-4 duration-500 hover:bg-white hover:border-white hover:text-indigo-600 rounded-2xl mt-5">Purchase</button>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="mt-20">
+            <p class="text-zinc-400 text-center">&copy; Plexus Services, All rights reserved.</p>
+        </footer>
+    </main>
+</body>
+
+</html>
